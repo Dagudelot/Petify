@@ -23,7 +23,7 @@ $router->get('user/{name?}', function ($name = null) {
     return 'Welcome ' .$name;
 })->where('name', '[A-Za-z]+');
 
-$router->get('posts/{postId}/comments/{commentId}', function ($postId, $commentId) {
+Route::get('posts/{postId}/comments/{commentId}', function ($postId, $commentId) {
     return "PostId = " . $postId . ", CommentId = " . $commentId;
 });*/
 
